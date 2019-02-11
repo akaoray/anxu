@@ -98,6 +98,10 @@ int main()
     depthBufferInfo.height = 600;
     auto depthBuffer = DepthBuffer::Create(device, depthBufferInfo);
 
+    RenderPass::Info renderPassInfo;
+    renderPassInfo.format = swapChain->GetFormat();
+    auto renderPass = RenderPass::Create(device, renderPassInfo);
+
     sleep(1);
 
     XMESSAGE("================================================================");

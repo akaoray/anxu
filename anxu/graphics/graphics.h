@@ -8,6 +8,7 @@
 #include "gpulist.h"
 #include "indexbuffer.h"
 #include "instance.h"
+#include "renderpass.h"
 #include "shader.h"
 #include "surface.h"
 #include "swapchain.h"

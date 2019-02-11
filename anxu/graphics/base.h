@@ -12,6 +12,8 @@ class GpuList;
 class Graphics;
 class IndexBuffer;
 class Instance;
+class Pipeline;
+class RenderPass;
 class Shader;
 class Surface;
 class SwapChain;

@@ -18,7 +18,9 @@ SOURCES += main.cpp \
     anxu/graphics/indexbuffer.cpp \
     anxu/graphics/uniformbuffer.cpp \
     anxu/graphics/shader.cpp \
-    anxu/graphics/depthbuffer.cpp
+    anxu/graphics/depthbuffer.cpp \
+    anxu/graphics/renderpass.cpp \
+    anxu/graphics/pipeline.cpp
 
 HEADERS += \
     anxu/graphics/graphics.h \
@@ -35,5 +37,7 @@ HEADERS += \
     anxu/graphics/indexbuffer.h \
     anxu/graphics/uniformbuffer.h \
     anxu/graphics/shader.h \
-    anxu/graphics/depthbuffer.h
+    anxu/graphics/depthbuffer.h \
+    anxu/graphics/renderpass.h \
+    anxu/graphics/pipeline.h
 

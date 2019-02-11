@@ -58,5 +58,19 @@ vk::ShaderModule Shader::GetNative()
     return this->shaderModule;
 }
 
+vk::PipelineShaderStageCreateInfo Shader::GetPipelineShaderStageCreateInfo()
+{
+    XDEBUG();
+
+    vk::PipelineShaderStageCreateInfo ci = {
+        vk::PipelineShaderStageCreateFlags(),
+        this->info.stage,
+        this->shaderModule,
+        this->info.entry.c_str()
+    };
+
+    return ci;
+}
+
 } }
 

@@ -9,11 +9,11 @@ class Shader
 public:
     struct Info
     {
-        vk::ShaderStageFlags stage;
+        vk::ShaderStageFlagBits stage;
         uint32_t size;
         std::string entry;
 
-        Info(vk::ShaderStageFlags stage_ = vk::ShaderStageFlagBits::eVertex, uint32_t size_ = 0, std::string entry_ = "main")
+        Info(vk::ShaderStageFlagBits stage_ = vk::ShaderStageFlagBits::eVertex, uint32_t size_ = 0, std::string entry_ = "main")
             : stage(stage_), size(size_), entry(entry_) {}
     };
 
@@ -22,6 +22,7 @@ public:
 
     Info GetInfo();
     vk::ShaderModule GetNative();
+    vk::PipelineShaderStageCreateInfo GetPipelineShaderStageCreateInfo();
 
 private:
     Shader();
